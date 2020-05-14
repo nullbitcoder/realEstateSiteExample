@@ -19,15 +19,14 @@ from pages.views import index_view, contact_view, about_view, blog_view, element
 
 urlpatterns = [
     path('', index_view, name='index'),
+    path('index/', index_view, name='index'),
     path('contact/', contact_view, name='contact'),
     path('admin/', admin.site.urls),
-    
-    
     path('about/', about_view, name='about'),
     path('blog/', blog_view, name='blog'),
     path('elements/', elements_view, name='elements'),
     path('facilities/', facilities_view, name='facilities'),
     path('sing_blog/', sing_blog_view, name='sing_blog'),
     path('admin/', blog_view, name='blog'),
-    path('property', property_view, name='property'),   
+    path('property/', property_view, name='property'),   
 ]
